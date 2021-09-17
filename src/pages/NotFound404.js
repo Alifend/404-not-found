@@ -18,12 +18,12 @@ const NotFound404 = () => {
           <Button>BACK TO HOMEPAGE</Button>
         </TextContainer>
       </Content>
-      <Footer>created by Alifend - devChanllenges.io</Footer>
     </Container>
   );
 };
 
 const Container = styled.div`
+  position: relative;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -68,9 +68,8 @@ const TextContainer = styled.div`
 const ImageContainer = styled.div`
   /* width: 286px;
   height: 238px; */
-  width: clamp(340px, 50%, 540px);
-  height: clamp(250px, 41%, 447px);
-  margin-bottom: 30px;
+  width: clamp(285px, 50%, 540px);
+  height: clamp(238px, 41%, 447px);
   @media (min-width: 813px) {
     width: 50%;
     height: 90%;
@@ -104,13 +103,6 @@ const Subtitle = styled.p`
   font-size: 18px;
   color: #4f4f4f;
   margin-bottom: 60px;
-`;
-const Footer = styled.footer`
-  position: absolute;
-  bottom: 30px;
-  width: 100%;
-  text-align: center;
-  color: #bdbdbd;
 `;
 
 const Button = styled.button`
