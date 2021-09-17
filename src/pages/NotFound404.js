@@ -18,7 +18,6 @@ const NotFound404 = () => {
           <Button>BACK TO HOMEPAGE</Button>
         </TextContainer>
       </Content>
-
       <Footer>created by Alifend - devChanllenges.io</Footer>
     </Container>
   );
@@ -31,7 +30,6 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 25px;
   @media (min-width: 813px) {
     flex-direction: column;
     justify-content: space-around;
@@ -51,7 +49,7 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   height: 90%;
-  width: 90%;
+  width: 100%;
   @media (min-width: 813px) {
     flex-direction: row;
     justify-content: space-around;
@@ -59,6 +57,7 @@ const Content = styled.div`
 `;
 
 const TextContainer = styled.div`
+  width: 90%;
   @media (min-width: 813px) {
     width: 50%;
     padding: 10px;
@@ -89,9 +88,10 @@ const Image = styled.img`
   max-height: 447px; */
 `;
 const Title = styled.p`
+  width: 100%;
   font-family: "Space Mono", monospace;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 44px;
   letter-spacing: -0.035em;
   color: #333333;
   margin: 0;
